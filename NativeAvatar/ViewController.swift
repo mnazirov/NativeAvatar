@@ -24,7 +24,7 @@ final class ViewController: UIViewController {
         contentView.image = UIImage(systemName: "person.crop.circle.fill")?.withRenderingMode(.alwaysTemplate)
         contentView.tintColor = .systemGray
         contentView.contentMode = .scaleAspectFit
-        contentView.layer.cornerRadius = 16
+        contentView.layer.cornerRadius = 18
         contentView.clipsToBounds = true
         return contentView
     }()
@@ -93,8 +93,8 @@ private extension ViewController {
         NSLayoutConstraint.activate([
             avatarView.rightAnchor.constraint(equalTo: navigationBar.rightAnchor, constant: -16),
             avatarView.bottomAnchor.constraint(equalTo: navigationBar.bottomAnchor, constant: -12),
-            avatarView.heightAnchor.constraint(equalToConstant: 32),
-            avatarView.widthAnchor.constraint(equalToConstant: 32)
+            avatarView.heightAnchor.constraint(equalToConstant: 36),
+            avatarView.widthAnchor.constraint(equalToConstant: 36)
             
         ])
     }
